@@ -3,9 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
     <title>Library</title>
 </head>
 <body>
-    
+    <button onclick="addBookToLibrary()">Add Book</button>
+
+    <form class="form">
+        <div class="form-card">
+            <div class="input-container">
+                <label for="title" class="input-label">Title</label>
+                <input type="text" class="text-input" id="title" placeholder="The Hobbit">
+            </div>
+            
+            <div class="input-container">
+                <label for="author" class="input-label">Author</label>
+                <input type="text" class="text-input" id="author" placeholder="J.R.R. Tolkien">
+            </div>
+
+            <div class="input-container">
+                <label for="pages" class="input-label">Pages Read</label>
+                <input type="text" class="text-input" id="pages" placeholder="310">
+            </div>
+
+            <div class="radio-container">
+                <div class="radio-set">
+                    <label for="hasRead">Read</label>
+                    <input type="radio" id="hasRead" class="radio" name="read" value="hasRead">
+                </div>
+
+                <div class="radio-set">
+                    <label for="notRead">Haven't Read</label>
+                    <input type="radio" id="notRead" class="radio" name="read" value="hasRead">
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Add To Library</button>
+        </div>
+    </form>
+
+    <div id="library"></div>
+
+    <script src="index.js"></script>
 </body>
 </html>
