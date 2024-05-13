@@ -8,9 +8,18 @@
     <title>Library</title>
 </head>
 <body>
-    <button onclick="addBookToLibrary()">Add Book</button>
+    <nav>
+        <div class="nav-content">
+            <p class="nav-logo">Booked</p>
 
-    <form class="form">
+            <button class="add-btn" onclick="displayForm()">Add Book</button>
+        </div>
+    </nav>
+
+    <h1 class="title">Library</h1>
+    <hr>
+
+    <form action="" id="form">
         <div class="form-card">
             <div class="input-container">
                 <label for="title" class="input-label">Title</label>
@@ -35,7 +44,7 @@
 
                 <div class="radio-set">
                     <label for="notRead">Haven't Read</label>
-                    <input type="radio" id="notRead" class="radio" name="read" value="hasRead">
+                    <input type="radio" id="notRead" class="radio" checked="checked" name="read" value="hasRead">
                 </div>
             </div>
 

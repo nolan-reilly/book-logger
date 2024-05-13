@@ -5,8 +5,53 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.form {
-    /* display: none; */
+nav {
+    background-color: rgb(49, 49, 49);
+    padding: 18px 0px;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.nav-logo {
+    color: white;
+    font-size: 20px;
+}
+
+.add-btn {
+    background-color: white;
+    border-style: none;
+    color: black;
+    padding: 8px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.15s ease-in;
+}
+
+.add-btn:hover {
+    opacity: 0.8;
+}
+
+.title {
+    text-align: center;
+    margin-top: 32px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 42px;
+}
+
+hr {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#form {
+    display: none;
 }
 
 /* Margin top currently a placeholder */
